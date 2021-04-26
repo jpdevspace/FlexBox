@@ -1,0 +1,60 @@
+:root {
+    --colorAqua: #00ffd8;
+    --colorLightBlue: #6dd1f6;
+    --colorDarkBlue: #3d7e9a;
+    --codeBlue: #e4f0f5;
+    --colorLightGray: #ecebeb;
+    --colorDarkBlack: #222;
+    --colorLightBlack: #444;
+    --colorPureBlack: #000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    color: var(--colorLightBlack);
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+#body-wrapper {
+    margin: 0 auto;
+    width: clamp(100px, 95%, 950px)
+}
+
+h1, h2, h3, h4 {
+    color: var(--colorDarkBlack);
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: circle inside none;
+}
+
+li::marker {
+    color: var(--colorAqua);
+}
+
+code {
+    font-family: monaco, monospace;
+    color: var(--colorDarkBlack);
+    background: var(--colorLightGray);
+    padding: 1px 4px;
+    border-radius: 5px;
+}
+
