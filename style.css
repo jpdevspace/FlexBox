@@ -1,12 +1,9 @@
 :root {
-    --colorAqua: #00ffd8;
-    --colorLightBlue: #6dd1f6;
-    --colorDarkBlue: #3d7e9a;
-    --codeBlue: #e4f0f5;
-    --colorLightGray: #ecebeb;
+    --colorAqua: #00FFD8;
+    --colorOrange: #FE4A49;
+    --colorLightGray: #E6E6EA;
     --colorDarkBlack: #222;
     --colorLightBlack: #444;
-    --colorPureBlack: #000;
 }
 
 * {
@@ -21,8 +18,8 @@ body {
 }
 
 #body-wrapper {
-    margin: 0 auto;
-    width: clamp(100px, 95%, 950px)
+    margin: 0 auto 7em auto;;
+    width: clamp(100px, 95%, 950px);
 }
 
 h1, h2, h3, h4 {
@@ -36,6 +33,15 @@ h1 {
 
 a {
     text-decoration: none;
+    color: var(--colorDarkBlack);
+    border-bottom: 4px solid var(--colorAqua);
+    font-weight: bold;
+    transition: background 1s linear;
+    padding: 1px 3.5px;
+}
+
+a:hover {
+    background: var(--colorAqua);
 }
 
 ul {
@@ -56,5 +62,32 @@ code {
     background: var(--colorLightGray);
     padding: 1px 4px;
     border-radius: 5px;
+}
+
+.flex-sample-container {
+    background: var(--colorLightGray);
+    border-radius: 5px;
+    height: 5em;
+    padding: 1em;
+}
+
+.flex-sample-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    background-color: var(--colorOrange);
+    border: 3px dashed var(--colorDarkBlack);
+    border-radius: 5px;
+    width: 50px;
+    color: #FFF;
+}
+
+#example-0 {
+    display: flex;
+}
+
+#example-1 {
+    display: inline-flex;
 }
 

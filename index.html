@@ -15,22 +15,67 @@
     <div id="body-wrapper">
         <h1>This is my personal guide to Flexbox</h1>
         <p>
-            The Flexible Box Module, more commonly known as flexbox, was designed as a one-dimensional layout Module
+            The Flexible Box Module, more commonly known as <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox">flexbox</a>, was designed as a one-dimensional layout Module
             and a method for space distribution between items.
         </p>
-        <h2>The main axis</h2>
+
+        <h2>The main axis & the cross axis</h2>
+        <p>
+            The <strong>main axis</strong> is the axis running in the direction the flex items.
+            are being laid out, either as rows or columns.
+            <br />
+            The <strong>cross axis</strong> runs perpendicular.
+        </p>
         <ul>
-            The main axis will run <strong>horizontally</strong> when you define the <code>flex-direction</code> property as:
+            The main axis will run <strong>horizontally</strong> (and the cross axis will run vertically) when you define the <code>flex-direction</code> property as:
             <li><code>row</code></li>
             <li><code>row-reverse</code></li>
         </ul>
         <ul>
-            The main axis will run <strong>vertically</strong> when you define the <code>flex-direction</code> property as:
+            The main axis will run <strong>vertically</strong> (and the cross axis will run horizontally) when you define the <code>flex-direction</code> property as:
             <li><code>column</code></li>
             <li><code>column-reverse</code></li>
         </ul>
 
-        <div class="example"></div>
+        <h2>Flex container</h2>
+        <p>
+            An area of a document laid out using flexbox. To create a <strong>flex container</strong>, simply set the <code>display</code> property
+            of the element to <code>flex</code> or  <code>flex-inline</code>
+            <br />
+            <ul>
+                These are the default properties
+                <li>Items display in a row (the flex-direction property's default is row).</li>
+                <li>Items start from the start edge of the main axis.</li>
+                <li>Items do not stretch on the main dimension, but can shrink.</li>
+                <li>Items will stretch to fill the size of the cross axis.</li>
+                <li>The <code>flex-basis</code> property is set to <code>auto</code>.</li>
+                <li>The <code>flex-wrap</code> property is set to <code>nowrap</code>.</li>
+            </ul>
+        </p>
+        
+        <h3>Example #0 - Default behavior</h3>
+        <div id="example-0" class="flex-sample-container">
+            <div class="flex-sample-item">1</div>
+            <div class="flex-sample-item">2</div>
+            <div class="flex-sample-item">3</div>
+            <div class="flex-sample-item">4</div>
+            <div class="flex-sample-item">5</div>
+        </div>
+
+        <h2>Properties for the parent (flex container)</h2>
+
+        <h3>display: flex</h3>
+        <p>Like the example above</p>
+
+        <h3>display: inline-flex</h3>
+        <div id="example-1" class="flex-sample-container">
+            <div class="flex-sample-item">1</div>
+            <div class="flex-sample-item">2</div>
+            <div class="flex-sample-item">3</div>
+            <div class="flex-sample-item">4</div>
+            <div class="flex-sample-item">5</div>
+        </div>
+        <hr />
     </div>
 </body>
 </html>
