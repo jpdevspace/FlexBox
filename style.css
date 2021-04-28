@@ -126,3 +126,18 @@ code {
     display: flex;
     flex-direction: column-reverse;
 }
+
+#example-06 {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#example-07 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#example-08 {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
