@@ -56,6 +56,18 @@ li::marker {
     color: var(--colorAqua);
 }
 
+details {
+    border: 4px solid black;
+    border-radius: 5px;
+    padding: 1em;
+    margin-bottom: 0.5em;
+}
+
+summary {
+    color: var(--colorDarkBlack);
+    font-weight: bold;
+}
+
 code {
     font-family: monaco, monospace;
     color: var(--colorDarkBlack);
@@ -67,8 +79,12 @@ code {
 .flex-sample-container {
     background: var(--colorLightGray);
     border-radius: 5px;
-    height: 5em;
+    min-height: 5em;
     padding: 1em;
+}
+
+.short-container {
+    width: 300px;
 }
 
 .flex-sample-item {
@@ -83,11 +99,30 @@ code {
     color: #FFF;
 }
 
-#example-0 {
+#example-00 {
     display: flex;
 }
 
-#example-1 {
+#example-01 {
     display: inline-flex;
 }
 
+#example-02 {
+    display: flex;
+    flex-direction: row;
+}
+
+#example-03 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#example-04 {
+    display: flex;
+    flex-direction: column;
+}
+
+#example-05 {
+    display: flex;
+    flex-direction: column-reverse;
+}
