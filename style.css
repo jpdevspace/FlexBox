@@ -141,3 +141,33 @@ code {
     display: flex;
     flex-wrap: wrap-reverse;
 }
+
+#example-09 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#example-10 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#example-11 {
+    display: flex;
+    justify-content: center;
+}
+
+#example-12 {
+    display: flex;
+    justify-content: space-between;
+}
+
+#example-13 {
+    display: flex;
+    justify-content: space-around;
+}
+
+#example-14 {
+    display: flex;
+    justify-content: space-evenly;
+}
