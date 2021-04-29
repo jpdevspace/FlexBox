@@ -87,6 +87,10 @@ code {
     width: 300px;
 }
 
+.tall-container {
+    height: 15em;
+}
+
 .flex-sample-item {
     display: flex;
     justify-content: center;
@@ -170,4 +174,29 @@ code {
 #example-14 {
     display: flex;
     justify-content: space-evenly;
+}
+
+#example-15 {
+    display: flex;
+    align-items: flex-start;
+}
+
+#example-16 {
+    display: flex;
+    align-items: flex-end;
+}
+
+#example-17 {
+    display: flex;
+    align-items: center;
+}
+
+#example-18 {
+    display: flex;
+    align-items: stretch;
+}
+
+#example-19 {
+    display: flex;
+    align-items: baseline;
 }

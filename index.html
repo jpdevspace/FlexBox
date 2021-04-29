@@ -173,7 +173,10 @@
 
         <details>
             <summary>justify-content: flex-start (default) | flex-end | center | space-between | space-around | space-evenly</summary>
-            Defines the alignment along the main axis.
+            Defines the alignment along the <strong>main axis</strong>.
+            There are more values for positional alignment, but they're not supported:
+            <code>start | end | left | right</code>. And for overflow alignment, not supported either:
+            <code>safe | unsafe</code>
 
             <h4>justify-content: flex-start</h4>
             <div id="example-09" class="flex-sample-container">
@@ -223,6 +226,54 @@
                 <div class="flex-sample-item">4</div>
             </div>
         </details>
+
+        <details>
+            <summary>align-items: flex-start | flex-end | center | stretch (default) | baseline</summary>
+            Defines the behavior of the flex items along the <strong>cross axis</strong>
+
+            <h4>align-items: flex-start</h4>
+            <div id="example-15" class="flex-sample-container tall-container">
+                <div class="flex-sample-item">1</div>
+                <div class="flex-sample-item">2</div>
+                <div class="flex-sample-item">3</div>
+                <div class="flex-sample-item">4</div>
+            </div>
+
+            <h4>align-items: flex-end</h4>
+            <div id="example-16" class="flex-sample-container tall-container">
+                <div class="flex-sample-item">1</div>
+                <div class="flex-sample-item">2</div>
+                <div class="flex-sample-item">3</div>
+                <div class="flex-sample-item">4</div>
+            </div>
+
+            <h4>align-items: center</h4>
+            <div id="example-17" class="flex-sample-container tall-container">
+                <div class="flex-sample-item">1</div>
+                <div class="flex-sample-item">2</div>
+                <div class="flex-sample-item">3</div>
+                <div class="flex-sample-item">4</div>
+            </div>
+
+            <h4>align-items: stretch</h4>
+            <div id="example-18" class="flex-sample-container tall-container">
+                <div class="flex-sample-item">1</div>
+                <div class="flex-sample-item">2</div>
+                <div class="flex-sample-item">3</div>
+                <div class="flex-sample-item">4</div>
+            </div>
+
+            <h4>align-items: baseline</h4>
+            Notice the baseline of the numbers are aligned.
+            <div id="example-19" class="flex-sample-container tall-container">
+                <div class="flex-sample-item">1</div>
+                <div class="flex-sample-item"><h1>2</h1></div>
+                <div class="flex-sample-item"><h4>3</h4></div>
+                <div class="flex-sample-item"><h3>4</h3></div>
+            </div>
+
+        </details>
+
     </div>
 </body>
 </html>
