@@ -364,7 +364,6 @@
             Item C: <code>order: 2</code>
             <br />
             Notice that items with no <code>order</code> property (D, E) are not affected.
-            <h4>order: 3</h4>
             <div id="example-26" class="flex-sample-container">
                 <div id="flex-item-A" class="flex-sample-item">A</div>
                 <div id="flex-item-B" class="flex-sample-item">B</div>
@@ -386,7 +385,6 @@
             Item C: <code>flex-grow: 2</code>
             <br />
             Notice that items with no <code>flex-grow</code> property (D, E) are not affected.
-            <h4>order: 3</h4>
             <div id="example-27" class="flex-sample-container">
                 <div id="flex-item-A" class="flex-sample-item">A</div>
                 <div id="flex-item-B" class="flex-sample-item">B</div>
@@ -394,6 +392,15 @@
                 <div class="flex-sample-item">D</div>
                 <div class="flex-sample-item">E</div>
             </div>
+        </details>
+
+        <details>
+            <summary>flex: none | [ &lt;'flex-grow'&gt; &lt;'flex-shrink'&gt;? || &lt;'flex-basis'&gt; ]</summary>
+            This is a shorthand for <code>flex-grow</code>, <code>flex-shrink</code> and <code>flex-basis</code> combined.
+            <br />
+            It's recommended to use this shorthand version instead of setting individual values.
+            <br />
+            <code>flex-shrink</code> and <code>flex-basis</code> are optional.
         </details>
     </div>
 </body>
