@@ -355,6 +355,8 @@
         
         <details>
             <summary>order: &lt;number&gt;</summary>
+            Changes the order of the items.
+            <br />
             Item A: <code>order: 3</code>
             <br />
             Item B: <code>order: 1</code>
@@ -364,6 +366,28 @@
             Notice that items with no <code>order</code> property (D, E) are not affected.
             <h4>order: 3</h4>
             <div id="example-26" class="flex-sample-container">
+                <div id="flex-item-A" class="flex-sample-item">A</div>
+                <div id="flex-item-B" class="flex-sample-item">B</div>
+                <div id="flex-item-C" class="flex-sample-item">C</div>
+                <div class="flex-sample-item">D</div>
+                <div class="flex-sample-item">E</div>
+            </div>
+        </details>
+
+        <details>
+            <summary>flex-grow: &lt;number&gt;</summary>
+            It accepts a unitless value that serves as a proportion. Dictates the amount of available space within the 
+            flex container the item should take up.
+            <br />
+            Item A: <code>flex-grow: 3</code>
+            <br />
+            Item B: <code>flex-grow: 1</code>
+            <br />
+            Item C: <code>flex-grow: 2</code>
+            <br />
+            Notice that items with no <code>flex-grow</code> property (D, E) are not affected.
+            <h4>order: 3</h4>
+            <div id="example-27" class="flex-sample-container">
                 <div id="flex-item-A" class="flex-sample-item">A</div>
                 <div id="flex-item-B" class="flex-sample-item">B</div>
                 <div id="flex-item-C" class="flex-sample-item">C</div>

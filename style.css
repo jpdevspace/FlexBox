@@ -252,3 +252,19 @@ code {
 #example-26 #flex-item-C {
     order: 2;
 }
+
+#example-27 {
+    display: flex;
+}
+
+#example-27 #flex-item-A {
+    flex-grow: 3;
+}
+
+#example-27 #flex-item-B {
+    flex-grow: 1;
+}
+
+#example-27 #flex-item-C {
+    flex-grow: 2;
+}
