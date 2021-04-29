@@ -269,3 +269,12 @@ code {
 #example-27 #flex-item-C {
     flex-grow: 2;
 }
+
+#example-28 {
+    display: flex;
+    align-items: center;
+}
+
+#example-28 #flex-item-C {
+    align-self: flex-start;
+}

@@ -395,12 +395,32 @@
         </details>
 
         <details>
-            <summary>flex: none | [ &lt;'flex-grow'&gt; &lt;'flex-shrink'&gt;? || &lt;'flex-basis'&gt; ]</summary>
+            <summary>flex: none | [ flex-grow flex-shrink? || flex-basis? ]</summary>
             This is a shorthand for <code>flex-grow</code>, <code>flex-shrink</code> and <code>flex-basis</code> combined.
             <br />
             It's recommended to use this shorthand version instead of setting individual values.
             <br />
             <code>flex-shrink</code> and <code>flex-basis</code> are optional.
+        </details>
+
+        
+        <details>
+            <summary>align-self: auto | flex-start | flex-end | center | baseline | stretch</summary>
+            Overrides the default vertical alignment (or the one set by <code>align-items</code> in the container) for flex items.
+            <br />
+            Works exactly like <code>align-items</code> but for a single flex item.
+            <br />
+            <br />
+            Item C: has <code>align-self: flex-start;</code>
+            <br />
+            The rest of the items are affected by <code>align-items: flex-start;</code>
+            <div id="example-28" class="flex-sample-container tall-container">
+                <div class="flex-sample-item">A</div>
+                <div class="flex-sample-item">B</div>
+                <div id="flex-item-C" class="flex-sample-item">C</div>
+                <div class="flex-sample-item">D</div>
+                <div class="flex-sample-item">E</div>
+            </div>
         </details>
     </div>
 </body>
