@@ -236,3 +236,19 @@ code {
     flex-wrap: wrap;
     align-content: stretch;
 }
+
+#example-26 {
+    display: flex;
+}
+
+#example-26 #flex-item-A {
+    order: 3;
+}
+
+#example-26 #flex-item-B {
+    order: 1;
+}
+
+#example-26 #flex-item-C {
+    order: 2;
+}
